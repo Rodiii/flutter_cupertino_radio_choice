@@ -16,7 +16,7 @@ CupertinoRadioChoice(
 Please refer to the example for usage: [Quick-Link](https://github.com/Rodiii/flutter_cupertino_radio_choice/blob/master/example/lib/main.dart)
 
 ### Example
-![Example](https://github.com/Rodiii/flutter_cupertino_radio_choice/raw/master/example.png)
+<img src="https://github.com/Rodiii/flutter_cupertino_radio_choice/raw/master/example.png" width="300">
 
 ## Bugs/Requests
 If you encounter any problems feel free to open an issue. If you feel the library is
