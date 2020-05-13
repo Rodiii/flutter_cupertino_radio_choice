@@ -1,0 +1,16 @@
+name: cupertino_radio_choice
+description: Cupertino buttons which are used as radio buttons in order to select one value.
+version: 1.0.0+1
+homepage: https://github.com/Rodiii/flutter_cupertino_radio_choice
+maintainer: Christoph Rothermel (@rothech)
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

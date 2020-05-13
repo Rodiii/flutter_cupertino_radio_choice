@@ -1,0 +1,16 @@
+name: example
+description: Flutter Cupertino Radio Button Example
+version: 1.0.1
+
+dependencies:
+  cupertino_radio_choice:
+    path: ../
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
