@@ -13,8 +13,8 @@ class CupertinoRadioChoice extends StatefulWidget {
       this.enabled = true});
 
   final Function onChange;
-  final String initialKeyValue;
-  final Map<String, String> choices;
+  final dynamic initialKeyValue;
+  final Map<dynamic, String> choices;
   final Color selectedColor;
   final Color notSelectedColor;
   final bool enabled;
@@ -25,7 +25,7 @@ class CupertinoRadioChoice extends StatefulWidget {
 
 /// State of the widget
 class _CupertinoRadioChoiceState extends State<CupertinoRadioChoice> {
-  String _selectedKey;
+  dynamic _selectedKey;
 
   @override
   void initState() {
@@ -38,13 +38,13 @@ class _CupertinoRadioChoiceState extends State<CupertinoRadioChoice> {
 
   Widget buildSelectionButton(String key, String value,
       {bool selected = false}) {
-    return new Flexible(
-        child: new CupertinoButton(
+    return Container(
+        child: CupertinoButton(
             disabledColor:
                 selected ? widget.selectedColor : widget.notSelectedColor,
             color: selected ? widget.selectedColor : widget.notSelectedColor,
             padding: const EdgeInsets.all(10.0),
-            child: new Text(value),
+            child: Text(value),
             onPressed: !widget.enabled || selected
                 ? null
                 : () {
@@ -63,7 +63,7 @@ class _CupertinoRadioChoiceState extends State<CupertinoRadioChoice> {
       buttonList.add(buildSelectionButton(key, widget.choices[key],
           selected: _selectedKey == key));
     }
-    return new Wrap(
+    return Wrap(
       children: buttonList,
       spacing: 10.0,
       runSpacing: 5.0,
