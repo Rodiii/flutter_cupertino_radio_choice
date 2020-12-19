@@ -1,3 +1,6 @@
+## 1.0.1+1
+  * Doc: Added some code documentation
+
 ## 1.0.1
   * Feature: Dynamic value in choices
   * Fix: Remove Flexible wrapper for Radio Choice. This caused an "Incorrect use of ParentDataWidget" error in some cases.

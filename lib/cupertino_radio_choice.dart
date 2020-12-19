@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CupertinoRadioChoice extends StatefulWidget {
+  /// CupertinoRadioChoice displays a radio choice widget with cupertino format
   CupertinoRadioChoice(
       {@required this.choices,
       @required this.onChange,
@@ -12,11 +13,23 @@ class CupertinoRadioChoice extends StatefulWidget {
       this.notSelectedColor = CupertinoColors.inactiveGray,
       this.enabled = true});
 
+  /// Function is called if the user selects another choice
   final Function onChange;
+
+  /// Defines which choice shall be selected initally by key
   final dynamic initialKeyValue;
+
+  /// Contains a map which defines which choices shall be displayed (key => value).
+  /// Values are the values displyed in the choices
   final Map<dynamic, String> choices;
+
+  /// The color of the selected radio choice
   final Color selectedColor;
+
+  /// The color of the not selected radio choice(s)
   final Color notSelectedColor;
+
+  /// Defines if the widget shall be enabled (clickable) or not
   final bool enabled;
 
   @override
