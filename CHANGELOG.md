@@ -1,3 +1,6 @@
+## 1.0.2
+  * Refactor: Add support for null-sound-safety
+
 ## 1.0.1+1
   * Doc: Added some code documentation
 
